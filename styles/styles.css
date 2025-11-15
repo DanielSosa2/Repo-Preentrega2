@@ -52,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #0066ff;
+    color: #025adf;
 }
 
 /* ---- SECCIONES ---- */
@@ -172,7 +172,6 @@ footer {
     padding: 20px;
 }
  
-/* ----- BOTÓN FOOTER ----- */
 .footer-btn {
     display: inline-flex !important; 
     flex-direction: column;
