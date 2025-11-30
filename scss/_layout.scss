@@ -1,0 +1,106 @@
+section{
+    padding: 80px 20px;
+}
+
+.base-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+p{
+ text-align:left;
+}
+
+
+
+@media (max-width: 500px) {
+
+    /* NAV */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav .logo img {
+        width: 45px;
+    }
+
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero img {
+        width: 220px;
+        margin-top: 20px;
+    }
+    .hero img:hover{
+     transform: scale(1.12) !important
+    }
+
+
+    /* SOBRE MI */
+    .sobre-mi-container h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .sobre-mi-container p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .lista-detalles {
+        padding-left: 5px;
+    }
+
+    .lista-detalles li {
+        font-size: 16px;
+    }
+
+    /* PORTAFOLIO */
+    .grid-proyectos {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .card {
+        padding: 15px;
+        width: 75%;
+    }
+
+    footer {
+        font-size: 14px;
+
+    }
+
+    .footer-btn {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 15px auto;
+        padding: 12px 22px;
+        font-size: 16px;
+    }
+
+    .flecha {
+        font-size: 20px;
+    }
+    
+}

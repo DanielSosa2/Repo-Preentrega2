@@ -1,298 +1,371 @@
+@charset "UTF-8";
 /* ---- RESET ---- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    color: #ffffff;
-    background-color: #061e42;
-    line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  background-color: #061e42;
+  line-height: 1.6;
 }
 
-p {
-    color: #0078e0;;
-}
 /* ---- NAVBAR ---- */
 header {
-    background: #0b0c0c;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid #ddd;
-    position: sticky;
-    top: 0;
-    z-index: 20;
+  background: #0b0c0c;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 nav {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
 }
 
 nav .logo img {
-    width: 100px;
-    border-radius: 50%;
-
+  width: 100px;
+  border-radius: 50%;
 }
 
 /* Menú */
 nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
 nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-    transition: 0.3s;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 nav a:hover {
-    color: #025adf;
+  color: #fa5102;
 }
 
 /* ---- SECCIONES ---- */
 section {
-    padding: 80px 20px;
+  padding: 80px 20px;
 }
 
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.footer-btn {
+  display: inline-flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background-color: #2054ff;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  width: auto !important;
+  max-width: fit-content !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+.footer-btn:hover {
+  background: #0047b3;
+  transform: translateY(-2px);
+}
+
+.flecha {
+  font-size: 18px;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+.base-title, .servicios-page h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+p {
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  /* NAV */
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  nav ul {
+    gap: 12px;
+  }
+  nav .logo img {
+    width: 45px;
+  }
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 15px;
+  }
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .hero img {
+    width: 220px;
+    margin-top: 20px;
+  }
+  .hero img:hover {
+    transform: scale(1.12) !important;
+  }
+  /* SOBRE MI */
+  .sobre-mi-container h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .sobre-mi-container p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .lista-detalles {
+    padding-left: 5px;
+  }
+  .lista-detalles li {
+    font-size: 16px;
+  }
+  /* PORTAFOLIO */
+  .grid-proyectos {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+  .card {
+    padding: 15px;
+    width: 75%;
+  }
+  footer {
+    font-size: 14px;
+  }
+  .footer-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 15px auto;
+    padding: 12px 22px;
+    font-size: 16px;
+  }
+  .flecha {
+    font-size: 20px;
+  }
+}
 /* ---- HERO INICIO ---- */
 .hero {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .hero-text h1 {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 16px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
 }
 
 .hero-text p {
-    font-size: 18px;
-    max-width: 600px;
-    color: #0078e0;
+  font-size: 18px;
+  max-width: 600px;
+  color: #0078e0;
 }
 
 .hero img {
-    width: 330px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  transform-origin: unset;
+}
+
+.hero img:hover {
+  transform: scale(1.2) translate(-40%, -15%);
 }
 
 /* ---- SOBRE MI ---- */
 .sobre-mi-container {
-    max-width: 900px;
-    margin: auto;
+  max-width: 900px;
+  margin: auto;
 }
 
 .sobre-mi-container h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-.misproyectos{
-    color: white;
-    text-align:center; 
-    margin-bottom:40px;
-    font-size: 48px;
+.misproyectos {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 48px;
 }
+
 .sobre-mi-container p {
-    font-size: 18px;
-    color: #0065e9;
-    margin-bottom: 16px;
+  font-size: 18px;
+  color: #0065e9;
+  margin-bottom: 16px;
 }
 
 .lista-detalles {
-    margin-top: 25px;
-    padding-left: 18px;
-    color: #0065e9;
+  margin-top: 25px;
+  padding-left: 18px;
+  color: #0065e9;
 }
 
 .lista-detalles li {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 /* ---- PORTAFOLIO ---- */
 .grid-proyectos {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
 .card {
-    background: #212327;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.07);
-    transition: 0.3s;
-    color: #fff;
+  background: #212327;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+  color: #fff;
 }
 
 .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 7px 20px rgba(0,0,0,0.12);
+  transform: scale(1.05);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.12);
 }
 
 .card img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 14px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 14px;
 }
 
 .card h3 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .card a {
-    color: #0066ff;
-    font-weight: 600;
-    text-decoration: none;
+  color: #0066ff;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-footer {
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
-    color: #777;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-    gap: 20px; 
-    padding: 20px;
+.servicios {
+  text-align: center;
 }
- 
-.footer-btn {
-    display: inline-flex !important; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    background-color: #2054ff;
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    width: auto !important;           
-    max-width: fit-content !important;
-    flex-grow: 0 !important;          
-    flex-shrink: 0;                   
-    margin: 0 auto;                   
+.servicios h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 
-
-
-.footer-btn:hover {
-    background: #0047b3;
-    transform: translateY(-2px);
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.flecha {
-    font-size: 18px;
+.card-servicio {
+  background: #061e42;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card-servicio:hover {
+  transform: translateY(-6px);
 }
 
-
-
-
-
-@media (max-width: 500px) {
-
-    /* NAV */
-    nav {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
-    }
-
-    nav ul {
-        gap: 12px;
-    }
-
-    nav .logo img {
-        width: 45px;
-    }
-
-    /* HERO */
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 15px;
-    }
-
-    .hero-text h1 {
-        font-size: 32px;
-    }
-
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .hero img {
-        width: 220px;
-        margin-top: 20px;
-    }
-
-    /* SOBRE MI */
-    .sobre-mi-container h2 {
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .sobre-mi-container p {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .lista-detalles {
-        padding-left: 5px;
-    }
-
-    .lista-detalles li {
-        font-size: 16px;
-    }
-
-    /* PORTAFOLIO */
-    .grid-proyectos {
-        grid-template-columns: 1fr;
-        padding: 0 15px;
-    }
-
-    .card {
-        padding: 15px;
-        width: 75%;
-    }
-
-    footer {
-        font-size: 14px;
-
-    }
-
-    .footer-btn {
-        display: block;
-        width: fit-content;
-        margin: 0 auto 15px auto;
-        padding: 12px 22px;
-        font-size: 16px;
-    }
-
-    .flecha {
-        font-size: 20px;
-    }
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 30px;
 }
 
+.servicios-page h1 {
+  color: #ffffff;
+}
 
+.contacto {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.contacto h1 {
+  margin-bottom: 25px;
+}
 
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.formulario input, .formulario textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+.formulario button {
+  padding: 12px;
+  background: #ffffff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.formulario button:hover {
+  background: rgb(229.5, 229.5, 229.5);
+}
+
+/*# sourceMappingURL=styles.css.map */

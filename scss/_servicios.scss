@@ -1,0 +1,39 @@
+.servicios {
+    text-align: center;
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card-servicio {
+    background: $bg-oscuro;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+    &:hover {
+        transform: translateY(-6px);
+    }
+}
+.cards {
+  @include flex-center(row, 30px, center, flex-start);
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.servicios-page h1 {
+  @extend .base-title;
+  color: $color-primario;
+}

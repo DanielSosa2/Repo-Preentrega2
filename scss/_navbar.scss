@@ -1,0 +1,47 @@
+/* ---- NAVBAR ---- */
+header {
+    background: #0b0c0c;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+nav .logo img {
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+/* Menú */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fa5102;
+}
+
+/* ---- SECCIONES ---- */
+section {
+    padding: 80px 20px;
+}

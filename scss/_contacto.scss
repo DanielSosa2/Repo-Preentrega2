@@ -1,0 +1,36 @@
+.contacto {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 25px;
+    }
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    input, textarea {
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 12px;
+        background: $color-primario;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            background: darken($color-primario, 10%);
+        }
+    }
+}
