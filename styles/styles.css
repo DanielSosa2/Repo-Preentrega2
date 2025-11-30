@@ -7,11 +7,14 @@
 
 body {
     font-family: "Inter", sans-serif;
-    color: #E6EDF3;
-    background-color: #0D1117;
+    color: #ffffff;
+    background-color: #061e42;
     line-height: 1.6;
 }
 
+p {
+    color: #0078e0;;
+}
 /* ---- NAVBAR ---- */
 header {
     background: #0b0c0c;
@@ -136,6 +139,7 @@ section {
     padding: 20px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.07);
     transition: 0.3s;
+    color: #fff;
 }
 
 .card:hover {
